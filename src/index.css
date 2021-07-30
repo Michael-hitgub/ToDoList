@@ -1,3 +1,13 @@
 * {
   font-family: "Roboto Mono", monospace;
+  font-size: x-large;
+  --purple: #cdb4db;
+  --pink: #ffc8dd;
+  --dark-pink: #ffafcc;
+  --blue: #bde0fe;
+  --dark-blue: #a2d2ff;
+}
+
+body {
+  background-color: var(--blue);
 }

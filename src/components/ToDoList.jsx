@@ -23,9 +23,11 @@ const ToDoList = (props) => {
     <div className="main">
       <h1>ToDo List</h1>
       <AddItem add={addItem} />
-      {items.map((e, i) => (
-        <Item key={i} id={i} content={e} del={deleteItem} />
-      ))}
+      <div className="items">
+        {items.map((e, i) => (
+          <Item key={i} id={i} content={e} del={deleteItem} />
+        ))}
+      </div>
     </div>
   );
 };

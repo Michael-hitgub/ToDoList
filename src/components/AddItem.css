@@ -1,0 +1,16 @@
+.add-item-box {
+  background-color: var(--pink);
+  border-radius: 10px;
+  width: 80%;
+  margin: 10px 0;
+  box-shadow: 3px 3px 10px gray;
+}
+
+.add-item-text {
+  margin: 5% 0 5% 5%;
+}
+
+input {
+  resize: horizontal;
+  width: 200px;
+}

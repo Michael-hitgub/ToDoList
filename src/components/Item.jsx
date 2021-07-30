@@ -9,11 +9,11 @@ const Item = (props) => {
   };
 
   return (
-    <div>
+    <div className="item-box">
       <IconButton onClick={del} id={props.id} className="delete-button">
         <DeleteIcon />
       </IconButton>
-      <span className="item">{props.content}</span>
+      <span className="item-text">{props.content}</span>
     </div>
   );
 };
