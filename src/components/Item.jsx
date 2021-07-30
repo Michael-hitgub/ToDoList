@@ -1,25 +1,19 @@
 import React from "react";
 import "./Item.css";
+import IconButton from "@material-ui/core/IconButton";
+import DeleteIcon from "@material-ui/icons/Delete";
 
 const Item = (props) => {
-  const del = (event) => {
-    props.del(event.target.value);
-  };
-
-  const updateContent = (event) => {
-    const { value, id } = event.target;
-    props.update(value, id);
+  const del = () => {
+    props.del(props.id);
   };
 
   return (
     <div>
-      <input type="checkbox" onClick={del} value={props.id} />
-      <input
-        className="item"
-        id={props.id}
-        value={props.content}
-        onChange={() => updateContent()}
-      />
+      <IconButton onClick={del} id={props.id} className="delete-button">
+        <DeleteIcon />
+      </IconButton>
+      <span className="item">{props.content}</span>
     </div>
   );
 };
