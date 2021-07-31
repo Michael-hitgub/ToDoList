@@ -1,5 +1,5 @@
 .add-item-box {
-  background-color: var(--pink);
+  background-color: var(--dark-pink);
   border-radius: 10px;
   width: 80%;
   margin: 10px 0;
@@ -13,4 +13,6 @@
 input {
   resize: horizontal;
   width: 200px;
+  border-radius: 5px;
+  border: 0;
 }

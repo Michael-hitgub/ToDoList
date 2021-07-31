@@ -3,7 +3,12 @@ import ToDoList from "./ToDoList";
 import "./App.css";
 
 const App = () => {
-  return <ToDoList />;
+  return (
+    <div>
+      <ToDoList />
+      <ToDoList />
+    </div>
+  );
 };
 
 export default App;

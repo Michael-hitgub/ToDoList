@@ -8,6 +8,10 @@
   --dark-blue: #a2d2ff;
 }
 
-body {
-  background-color: var(--blue);
+html {
+  background-image: -webkit-linear-gradient(
+    65deg,
+    var(--dark-blue) 50%,
+    var(--dark-pink) 50%
+  );
 }
