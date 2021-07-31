@@ -20,13 +20,15 @@ const ToDoList = (props) => {
   };
 
   return (
-    <div className="main">
-      <h1>ToDo List</h1>
-      <AddItem add={addItem} />
-      <div className="items">
-        {items.map((e, i) => (
-          <Item key={i} id={i} content={e} del={deleteItem} />
-        ))}
+    <div className="container">
+      <div className="main">
+        <h1>{props.title}</h1>
+        <AddItem add={addItem} />
+        <div className="items">
+          {items.map((e, i) => (
+            <Item key={i} id={i} content={e} del={deleteItem} />
+          ))}
+        </div>
       </div>
     </div>
   );
